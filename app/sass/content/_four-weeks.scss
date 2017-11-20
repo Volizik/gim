@@ -1,0 +1,36 @@
+.four-weeks {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+
+	height: 615px;
+	background-image: url(../img/girl-02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+
+	@include breakpoint(max-width 1200px) {
+		height: 47vw;
+	}
+
+	h2 {
+		max-width: 1200px;
+		width: 95%;
+		margin: 0;
+		padding-bottom: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 34px;
+		line-height: 1.6em;
+		color: #0F0F0F;
+
+		@include breakpoint(max-width 768px) {
+			font-size: 24px;
+		}
+
+		@include breakpoint(max-width 576px) {
+			font-size: 16px;
+		}
+	}
+}

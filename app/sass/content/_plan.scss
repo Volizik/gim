@@ -1,0 +1,50 @@
+.plan {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 830px;
+	background-image: url(../img/girl-01.jpg);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: cover;
+/*
+	img {
+		max-width: 840px;
+		width: 100%;
+	}*/
+	
+	.plan__wrap {
+		max-width: 840px;
+		width: 95vw;
+		margin: 0 auto;
+	}
+
+	.plan__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@include breakpoint(max-width 882px) {
+			justify-content: flex-start;
+		}
+	}
+
+	.plan__cell {
+		width: 280px;
+
+		p {
+			display: flex;
+			align-items: center;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 300;
+			font-size: 20px;
+			color: white;
+		}
+
+		span {
+			margin-right: 5px;
+			font-size: 80px;
+		}
+	}
+}

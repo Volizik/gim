@@ -1,0 +1,39 @@
+header {
+	height: 720px;
+	background-image: url(../img/girl-03.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	
+	@include breakpoint(max-width 1600px) {
+		height: 38vw;
+	}
+
+	a {
+		position: relative;
+		left: 30px;
+		bottom: 8%;
+
+		@include breakpoint(max-width 1600px) {
+			left: 0;
+		}
+
+		@include breakpoint(max-width 1200px) {
+			bottom: 5%;
+		}
+
+		@include breakpoint(max-width 768px) {
+			bottom: 10px;
+		}
+
+		img {
+			@include breakpoint(max-width 768px) {
+				width: 180px;
+			}
+		}
+	}
+}
