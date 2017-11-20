@@ -1,0 +1,76 @@
+.footer {
+  height: 100vh;
+  width: 100%;
+  background: url(../img/girl-04.jpg) center center no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  &__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 550px;
+    padding: 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  &__header {
+    width: 100%;
+    p {
+      width: 100%;
+      text-align: right;
+      border-bottom: 1px dotted #000;
+      margin: 0;
+      padding-bottom: 10px;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin-top: 25px;
+      margin-bottom: 7px;
+    }
+    input[type="submit"] {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(3,3,3,1);
+      background-color: rgba(255,230,0,1);
+      border: 1px solid rgba(255,114,102,1);
+      padding: 13px 25px;
+      border-radius: 5px;
+      max-width: 200px;
+      margin: 30px auto 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      &:hover {
+        background-color: rgba(151,147,147,1)
+      }
+    }
+  }
+  &__input {
+    display: flex;
+    input {
+      width: 100%;
+      padding: 0px 10px;
+      box-sizing: border-box;
+      height: 30px;
+      border: 1px solid rgba(255,181,175,1);
+      &:nth-of-type(2) {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .require {
+    color: red;
+    padding: 0px 5px;
+    box-sizing: border-box;
+  }
+}
