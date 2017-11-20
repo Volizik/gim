@@ -1,0 +1,116 @@
+.prices {
+  position: relative;
+  width: 100%;
+  background: url(../img/girl-05.jpg) top center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__heading {
+    p {
+      font-size: 30px;
+      font-weight: 300;
+      line-height:40px;
+      max-width: 900px;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 60px 0 0;
+      span {
+        display: block;
+      }
+    }
+  }
+  &__title {
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+  }
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 950px;
+    margin-bottom: 70px;
+  }
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0;
+    box-shadow: 1.49px 1.34px 4px 1px rgba(0,0,0,0.25);
+    height: 525px;
+    min-width: 278px;
+    @include breakpoint(max-width 555px) {
+      margin-bottom: 40px;
+    }
+    &:first-of-type,
+    &:last-of-type {
+      margin-top: 80px;
+      @include breakpoint(max-width 555px) {
+        margin-top: 0;
+      }
+    }
+    &--head {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 77px;
+      color: #fff;
+      font-size: 30px;
+      box-sizing: border-box;
+      padding: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      background-color: rgba(226, 28, 33, 1);
+    }
+    &--list {
+      padding: 0px 15px 0px 30px;
+      box-sizing: border-box;
+      li {
+        padding: 7px 0;
+      }
+    }
+    &--btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: -20px;
+      transition: 0.4s ease 0s;
+      color: #000000;
+      border: none;
+      background-color: rgba(255, 230, 0, 1);
+      box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.2);
+      padding: 10px 20px;
+      box-sizing: border-box;
+      font-size: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 170px;
+      &:hover {
+        transition: 0.4s ease 0s;
+        color: #fff;
+        background-color: rgba(0, 77, 78, 1);
+      }
+    }
+  }
+  &__question {
+    span {
+      display: inline-block;
+      color: #fff;
+      background-color: rgba(255,255,255,.4);
+      padding: 10px 50px;
+      box-sizing: border-box;
+      font-size: 40px;
+      font-weight: 300;
+      text-align: center;
+    }
+  }
+}
